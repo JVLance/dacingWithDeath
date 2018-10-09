@@ -35,7 +35,7 @@ Vue.config.productionTip = false
 Vue.use(BootstrapVue)
 
 Vue.use(VueResource)
-Vue.http.options.root = 'http://127.0.0.1:8000/api'
+Vue.http.options.root = 'http://35.231.212.169/dancingunblockhour/api/public/index.php/api'
 
 Vue.use(BlockUI)
 
