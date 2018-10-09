@@ -30,12 +30,12 @@ import VModal from 'vue-js-modal'
 Vue.component('icon', Icon)
 
 
-Vue.config.productionTip = false
+Vue.config.productionTip = true;
 
 Vue.use(BootstrapVue)
 
 Vue.use(VueResource)
-Vue.http.options.root = 'http://127.0.0.1:8000/api'
+Vue.http.options.root = 'http://35.231.212.169/dancingblockhour/api/public/index.php/api'
 
 Vue.use(BlockUI)
 
