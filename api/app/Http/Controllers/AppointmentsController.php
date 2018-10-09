@@ -38,9 +38,10 @@ class AppointmentsController extends Controller
             return response()->json(['errors'=>$validator->errors()]);
         }
 
+        /*
         if (!Connection::validateHours(\Request::getClientIp(true))){
             return response()->json(['response' => 'error', 'Message' => 'An appointment has already been saved. It is necessary to wait one hour from the last reservation to be able to schedule another appointment.']);
-        }
+        }*/
 
         $appointment->hour          = $request->input('hour');
         $appointment->date          = $request->input('date');
